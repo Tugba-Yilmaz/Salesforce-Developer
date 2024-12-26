@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" 
+                       controller="HesaplaController"
+                            >  
+    
+    <aura:attribute name="sonucname" type="string" />
+    <ui:inputNumber label="1. Sayi " aura:id="n1" />	
+    <ui:inputNumber label="2. Sayi " aura:id="n2" />
+    <ui:Button label="Topla" press="{!c.HesaplaFunction}"/>
+    <h1>{!v.sonucname}</h1> 
+    <ui:inputText label="SONUC:" value="{!v.sonucname}" />
+</aura:component>

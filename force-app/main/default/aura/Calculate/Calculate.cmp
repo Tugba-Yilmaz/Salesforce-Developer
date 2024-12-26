@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="num1" type="Decimal" />
+    <aura:attribute name="num2" type="Decimal" />
+    <aura:attribute name="result" type="Decimal" />
+    
+    <ui:inputNumber label="1. Sayi" aura:id="numberx" value="{!v.num1}" />
+    <ui:inputNumber label="2. Sayi" aura:id="numbery" value="{!v.num2}" />
+    <ui:button label="Calistir" press="{!c.Toplama}" class="button" />
+    <h1>{!v.num1}</h1>
+    <h1>{!v.num2}</h1>
+    <h1>{!v.result}</h1>
+    
+    
+</aura:component>
